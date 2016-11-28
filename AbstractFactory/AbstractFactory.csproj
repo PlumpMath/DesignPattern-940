@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1848A6D8-F825-4A2B-B99D-53767284DDF8}</ProjectGuid>
+    <ProjectGuid>{EC69A5D0-E261-4887-AFCB-4A79C65E9104}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SimpleFactory</RootNamespace>
-    <AssemblyName>SimpleFactory</AssemblyName>
+    <RootNamespace>AbstractFactory</RootNamespace>
+    <AssemblyName>AbstractFactory</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,15 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Payment\ConcretePayment\AliPay.cs" />
-    <Compile Include="Payment\ConcretePayment\WechatPay.cs" />
-    <Compile Include="Payment\Factory.cs" />
-    <Compile Include="Payment\IPayment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="简单工厂模式%28SimpleFactory%29.txt" />
+    <Content Include="抽象工厂模式%28AbstractFactory%29.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
